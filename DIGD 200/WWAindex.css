@@ -2,31 +2,6 @@ body{
     background-color:teal;
     margin: 0 auto;
 }
-/*header {
-  background-color: aliceblue;
-  border-bottom: 1px solid darkblue;
-  position: fixed;
-    width: 100%;
-  z-index: 10;
-}*/
-
-/*
-ul {
-  margin: 30px auto;
-  padding: 0 20px 0px 80px;
-  text-align: center;
-}
-
-li {
-  color: #000;
-  font-family: 'Oswald', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 100px;
-}
-*/
 
 h1{
     text-align: center;
@@ -71,7 +46,7 @@ a{
     font: 18px;
 }
 
-
+/*this is used to give the div that will be used as my navigation bar to line up horzintally, instead of vertically. It also makes it so the nave bar follows as the user scrolls down*/
 .navigation{
     display: flex;
     background-color: aliceblue;
@@ -80,18 +55,63 @@ a{
     z-index: 10;
     width: 100%;
     border-bottom: 5px solid darkblue;
+    margin-bottom: 75px;
 }
 .navigation > div {
     display: flex;
     font-size: 2em;
     padding: 10px 60px;
+    align-items: center;
 
 }
+/*keeps the images to a conscent size throught out the website.*/
 img{
     width: 560px;
     height: 315px;
 }
+/*makes so the logo for the site on the nav bar is not too big*/
 img.logo{
     width: 100px;
     height: 100px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+/*divdes up the table elements*/
+table, th, td {
+    border: 1px solid black;
+    background-color: teal;
+    color: aliceblue;
+    text-align: center;
+}
+/*give each elements on the table more verical space*/
+th{
+    height: 35px;
+}
+
+td {
+     height: 35px;
+    
+}
+/*These are used to styleized the button on the site. The button are normally white with a teal outline and black text, but when the user hovers over it with the mouse the button becomes teal with white text. When the button is decative, it is gray with black text.*/
+button {
+    font-size: 20px;
+    padding: 20px 45px;
+    border-radius: 15%;
+    background-color: white;
+    color: black;
+    border: 3px solid #008080;
+  transition-duration: 0.6s;
+}
+
+button:hover {
+    background-color: teal;
+    color: white;
+}
+
+button:disabled {
+    color: black;
+    background-color: gray;
 }

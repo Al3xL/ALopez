@@ -9,20 +9,34 @@
     <body>
         <header>
         <div class="navigation">
-                    <div>Tags</div>
-                    <div class="active">New</div>
+                    <div><a href="WWA-tags.html">Tags</a></div>
+            <div class="active"><a href="WWA-news.html">New</a></div>
             <div><a href="WWAindex.html"><img src="Img/Logo.png" alt="logo" width="20px" height="20px" class="logo"></a></div>
-                    <div>Staff</div>
-                    <div>Account</div>
+            <div><a href="WWA-Staff.html">Staff</a></div>
+            <div><a href="WWA-Join.html">Join Us</a></div>
                 </div>
         </header>      
-   
+   <!--the form is used to make a page for the user to sign up to work as a writer, eiditor, or progarmer for the site. They will have to fill out their name, email, telephone nummber, the position they want, and what date will they be aviable to talk on.-->
     <div class="article-header">
-            <h2>What do you ger when you mix a mouse, a pig, a rabbit, and a kangaroo all together? </h2>
-            <img src="Img/_wkddO.gif" alt="Jerboa hopping">
-            <div class="sammple">
-                <p>Besides looking like the result of someone messing around in a game of Spore, this weird creature is known a jerboa a rodent from China with a surprsing amount of jumping power! ...</p>
-                <a href="WWA-Jerboa.html">Read More</a>
+            <form method="get" action="WWA-Thanks.html">
+                <label>Frist Name:</label><br><br>
+                <input type="text" name="Fristname" value="Frist"><br><br>
+                <label>Last Name:</label><br><br>
+                <input type="text" name="Lastname" value="Last"><br><br>
+                <label>Email:</label><br><br>
+                <input type="email" name="email" value="Email"><br><br>
+                <label>Telephone:</label><br><br>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                <label>Job:</label><br><br>
+                <input type="radio" name="job" value="Writer"> Writer<br><br>
+                <input type="radio" name="job" value="Editor"> Editor<br><br>
+                <input type="radio" name="job" value="Progarmer"> Progarmer<br><br>
+                <label>Time you will be free to talk.</label><br><br>
+                <input type="datetime-local" name="Meeting_time"><br><br>
+                <input type="submit" value="Join">
+                <input type="reset" value="Reset">
+                
+            </form>
             </div>
     </div>
         
