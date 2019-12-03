@@ -115,10 +115,20 @@ button:disabled {
     color: black;
     background-color: gray;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     img{
-    width: 360px;
+    width: 160px;
     height: 215px;
+    }
+    img.logo{
+    width: 150px;
+    height: 150px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    img{
+    width: 160px;
+    height: 115px;
     }
     img.logo{
     width: 150px;
