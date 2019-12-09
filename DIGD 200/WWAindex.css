@@ -118,7 +118,7 @@ button:disabled {
 }
 @media only screen and (max-width: 340px){
     img{
-    width: auto;
+    width: 100px;
     height: 215px;
     }
     img.logo{
