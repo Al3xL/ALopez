@@ -116,7 +116,7 @@ button:disabled {
     color: black;
     background-color: gray;
 }
-@media only screen and (max-width: 840px){
+@media only screen and (min-width: 340px){
     img{
     width: 275px;
     height: 215px;
@@ -176,6 +176,23 @@ th{
 td {
      height: 55px;
     
+}
+.navigation{
+    display: flex;
+    background-color: aliceblue;
+        justify-content: space-around;
+    position: fixed;
+    z-index: 10;
+    width: 70%;
+    border-bottom: 5px solid darkblue;
+    margin-bottom: 75px;
+}
+.navigation > div {
+    display: flex;
+    font-size: 2em;
+    padding: 10px 50px;
+    align-items: center;
+
 }
 }
 
