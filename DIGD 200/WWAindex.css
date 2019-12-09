@@ -116,9 +116,9 @@ button:disabled {
     color: black;
     background-color: gray;
 }
-@media only screen and (min-width: 340px){
+@media only screen and (max-width: 340px){
     img{
-    width: 275px;
+    width: 75px;
     height: 215px;
     }
     img.logo{
@@ -183,15 +183,17 @@ td {
         justify-content: space-around;
     position: fixed;
     z-index: 10;
-    width: 70%;
+    width: 100%;
     border-bottom: 5px solid darkblue;
     margin-bottom: 75px;
 }
 .navigation > div {
     display: flex;
     font-size: 2em;
-    padding: 10px 50px;
+    padding: 10px 20px;
     align-items: center;
+    justify-content: space-around;
+    width: 30%;
 
 }
 }
