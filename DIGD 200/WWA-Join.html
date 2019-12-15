@@ -3,11 +3,11 @@
     <head>
         <title>WAA-Tags-Mammals</title>
         <link href="WWAindex.css" rel="stylesheet" type="text/css">
-        <link href="article-grid.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
         <header>
+            <!--    this list of div work for making the nav bar that is used through out the website.-->
         <div class="navigation">
                     <div><a href="WWA-tags.html">Tags</a></div>
             <div class="active"><a href="WWA-news.html">New</a></div>
@@ -17,8 +17,10 @@
                 </div>
         </header>      
    <!--the form is used to make a page for the user to sign up to work as a writer, eiditor, or progarmer for the site. They will have to fill out their name, email, telephone nummber, the position they want, and what date will they be aviable to talk on.-->
+    <!--        the breaks tags are use to seperates the divs from each other so they do not merge together.-->
     <div class="article-header">
             <form method="get" action="WWA-Thanks.html">
+                <!--gets the user to write down their frist name, last name, email, and phone number-->
                 <label>Frist Name:</label><br><br>
                 <input type="text" name="Fristname" value="Frist"><br><br>
                 <label>Last Name:</label><br><br>
@@ -27,11 +29,13 @@
                 <input type="email" name="email" value="Email"><br><br>
                 <label>Telephone:</label><br><br>
                 <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+<!--                the user picks what job they want to get-->
                 <label>Job:</label><br><br>
                 <input type="radio" name="job" value="Writer"> Writer<br><br>
                 <input type="radio" name="job" value="Editor"> Editor<br><br>
                 <input type="radio" name="job" value="Progarmer"> Progarmer<br><br>
                 <label>Time you will be free to talk.</label><br><br>
+<!--                gets the time form the user to get a meeting time to talk-->
                 <input type="datetime-local" name="Meeting_time"><br><br>
                 <input type="submit" value="Join">
                 <input type="reset" value="Reset">
